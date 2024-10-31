@@ -29,6 +29,11 @@
         <input type="hidden" name="selected_foods" value="<?php echo implode(', ', $selected_foods); ?>">
         <input type="hidden" name="total_price" value="<?php echo $total_price; ?>">
 
+        <div class="form-group">
+            <label>Total Price</label>
+            <p class="form-control-plaintext" id="totalPriceDisplay">$<?php echo number_format($total_price, 2); ?></p> <!-- نمایش مبلغ کل -->
+        </div>
+
         <div class="text-center mt-4">
             <button type="submit" class="btn btn-primary btn-lg">Place Order</button>
         </div>
